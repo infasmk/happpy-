@@ -12,28 +12,28 @@ interface Photo {
 const photos: Photo[] = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/5hbcVmFb/IMG-20251231-223445-206.jpg",
     caption: "Magic in the air",
     rotation: -2,
     delay: 0
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1522673607200-1645062cd958?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/qLt1WnQJ/IMG-20251231-223418-801.jpg",
     caption: "The prettiest smile",
     rotation: 3,
     delay: 0.2
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/fVpcFsHX/IMG-20251231-223500-959.jpg",
     caption: "Adventures with you",
     rotation: -3,
     delay: 0.4
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1490750967868-58cb75063ed4?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/0V6ST7Hg/IMG-20251231-223410-008.jpg",
     caption: "Flowers for you",
     rotation: 2,
     delay: 0.6
@@ -52,7 +52,7 @@ const TiltCard: React.FC<{ photo: Photo }> = ({ photo }) => {
   const mouseY = useSpring(y, { stiffness: 150, damping: 20 });
 
   // Calculate rotation based on mouse position
-  // Range is small (±10 deg) for subtle effect
+  // Range is small (Â±10 deg) for subtle effect
   const rotateX = useTransform(mouseY, [-0.5, 0.5], [10, -10]); 
   const rotateY = useTransform(mouseX, [-0.5, 0.5], [-10, 10]);
 
@@ -150,7 +150,7 @@ const PhotoGallerySection: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Captured Moments 📸
+        Captured Moments ðŸ“¸
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 px-4">
