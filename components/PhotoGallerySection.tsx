@@ -12,14 +12,14 @@ interface Photo {
 const photos: Photo[] = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/5hbcVmFb/IMG-20251231-223445-206.jpg",
     caption: "Magic in the air",
     rotation: -2,
     delay: 0
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1522673607200-1645062cd958?q=80&w=800&auto=format&fit=crop",
+    url: "https://i.ibb.co/qLt1WnQJ/IMG-20251231-223418-801.jpg",
     caption: "The prettiest smile",
     rotation: 3,
     delay: 0.2
